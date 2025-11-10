@@ -13,7 +13,7 @@ def divisors(number: int) -> Union[List[int], str]:
     '''
     
     if number == 0:
-        return 'Любое ненулевое число — делитель числа 0. '
+        return 'Any non—zero number is a divisor of 0. '
 
     list_of_divisors = []
 
@@ -24,7 +24,7 @@ def divisors(number: int) -> Union[List[int], str]:
     return list_of_divisors
 
 def main() -> None:
-    number = int(input('Введите целое число: '))
+    number = int(input('Enter an integer: '))
     result = divisors(number)
     print(result)
 
