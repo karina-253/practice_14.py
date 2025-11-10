@@ -4,7 +4,7 @@ def transformations(text: str) -> str:
      sorts it, and returns the string
 
     Args:
-        text (str): String
+        text (str): The source string for processing
     Returns:
         str: returns the string received after transformations.
     '''
