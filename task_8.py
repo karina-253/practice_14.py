@@ -2,7 +2,7 @@ def transformations(text: str) -> str:
     '''
     The function Converts a string into a list of characters,
      sorts it, and returns the string
-
+     
     Args:
         text (str): The source string for processing
     Returns:
@@ -18,7 +18,7 @@ def transformations(text: str) -> str:
     return list_in_str
 
 def main() -> None:
-    input_str = input('Введите строку: ')
+    input_str = input('Enter the line: ')
     result = transformations(input_str)
     print(result)
 
