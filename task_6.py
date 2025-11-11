@@ -12,9 +12,9 @@ def divisors(number: int) -> Union[List[int], str]:
         List[int]: list of the divisors of that number.
         str: if the number is zero.
     '''
-    
+
     if number == 0:
-        return 'Any non—zero number is a divisor of 0. '
+        return 'Любое ненулевое число — делитель числа 0. '
 
     list_of_divisors = []
 
@@ -25,9 +25,13 @@ def divisors(number: int) -> Union[List[int], str]:
     return list_of_divisors
 
 def main() -> None:
-    number = int(input('Enter an integer: '))
-    result = divisors(number)
-    print(result)
+    try:
+        number = int(input('Enter an integer: '))
+        result = divisors(number)
+        print(result)
+
+    except ValueError:
+        print('Error: Please enter a valid integer!')
 
 if __name__ == "__main__":
     main()
