@@ -8,7 +8,7 @@ try:
         for num in list_of_numbers:
             if num != 3:
                 new_list.append(num)
-        print('Результат:', new_list)
+        print(new_list)
 
 except ValueError:
     print('Ошибка: вводите только целые числа!')
