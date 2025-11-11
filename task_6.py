@@ -1,5 +1,6 @@
 from typing import List, Union
 
+
 def divisors(number: int) -> Union[List[int], str]:
     '''
     The function receives an integer and returns
